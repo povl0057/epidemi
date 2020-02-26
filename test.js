@@ -1,4 +1,17 @@
 
+var running = false
+function setRunning()
+{
+
+    if(running == true){
+      running = false
+      document.querySelector('#startButton').innerText = 'Start';
+    }else{
+      running = true
+      document.querySelector('#startButton').innerText = 'Pause';
+    }
+}
+
 
 var canvas2 = document.getElementById("myOtherCanvas")
 var width2 = canvas2.width
@@ -150,10 +163,13 @@ function checkCollision(){
 
 }
 function loop(timestamp) {
+  
   var progress = timestamp - lastRender
+  if (running == true){
+    update(progress)
+    draw()
+  }
 
-  update(progress)
-  draw()
 
   lastRender = timestamp
   window.requestAnimationFrame(loop)
@@ -261,6 +277,6 @@ var updateChart = function (count) {
 };
 
 updateChart(dataLength);
-setInterval(function(){updateChart()}, updateInterval);
+setInterval(function(){ if(running){updateChart()}}, updateInterval);
 
 }
