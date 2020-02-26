@@ -8,8 +8,10 @@
 <body>
   <h1>Simuleret epidemi</h1>
   <p>Denne simulation simulerer et SIR-modellen. Der starter med at være et antal susceptible, som så har en sandsynlighed for at møde og blive inficeret af en incected. De firkanter, som er inficerede, har en sandsynlighed for at dø og for at blive immune, hvorefte de ryger i gruppen recovered.</p>
-  
- 
+ <p>På billedet nedenfor ses SIR-modellen, og hvis man kører simulationen ses det, at graferne for S(t), I(t) og R(t) stemmer ret godt overens med modellen. Ved SIR-modellen regner man dog med, at sandsynligheden for at en smittelig bliver smittet af en inficeret er konstant, og på samme måde at sandsynligheden for at en inficeret kommer i gruppen R er konstant. Dette er dog ikke opfyldt i simulationen(og heller ikke i virkeligheden).  </p> 
+ <br>
+  <img src="1200px-SIR-Modell.svg.png" alt="SIR-model">
+  <br>
  <a href="https://github.com/povl0057/povl0057.github.io">Link til github-repository</a>
   <canvas id="myCanvas" width="900" height="500" style="border:1px solid #000000;">
   </canvas>
