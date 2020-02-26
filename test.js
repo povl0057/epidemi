@@ -179,30 +179,30 @@ window.onload = function () {
           gridThickness: 0,
       title: "Antal",
     },
-    data: [{
+    /*data: [{
       type: "line",
       lineColor: "yellow",
       showInLegend: true,
       name: "Antal levende",
       dataPoints: dps
-    },
+    },*/
     {
       type: "line",
-      lineColor: "red",
+      lineColor: "ff0000",
       showInLegend: true,
       name: "I(t)",
       dataPoints: dpsSyge
     },
     {
       type: "line",
-      lineColor: "blue",
+      lineColor: "0000ff",
       showInLegend: true,
       name: "S(t)",
       dataPoints: dpsRaske
     },
     {
       type: "line",
-      lineColor: "green",
+      lineColor: "00b200",
       showInLegend: true,
       name: "R(t)",
       dataPoints: dpsImmune
