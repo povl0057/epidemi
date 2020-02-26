@@ -138,9 +138,9 @@ function draw() {
   talPlot.clearRect(0, 0, width2, height2)
   drawRects()
   talPlot.fillText("Population: " + rects.length,10,15)
-  talPlot.fillText("S(t): " + raske,10,35)
-  talPlot.fillText("I(t): " + syge,10,55)
-  talPlot.fillText("R(t): " + (dead + immune),10,75)
+  talPlot.fillText("S: " + raske,10,35)
+  talPlot.fillText("I: " + syge,10,55)
+  talPlot.fillText("R: " + (dead + immune),10,75)
 
   talPlot.fillText("Døde: " + dead,10,95)
   talPlot.fillText("Immune: " + immune,10,115)
@@ -182,7 +182,7 @@ window.onload = function () {
     data: [{
       type: "line",
       showInLegend: true,
-      name: "Population",
+      name: "Antal levende",
       dataPoints: dps
     },
     {
