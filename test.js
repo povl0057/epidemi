@@ -137,13 +137,13 @@ function draw() {
   ctx.clearRect(0, 0, width, height)
   talPlot.clearRect(0, 0, width2, height2)
   drawRects()
-  talPlot.fillText("Population: " + rects.length,10,15)
+  talPlot.fillText("Antal levende: " + rects.length,10,15)
   talPlot.fillText("S: " + raske,10,35)
   talPlot.fillText("I: " + syge,10,55)
   talPlot.fillText("R: " + (dead + immune),10,75)
 
-  talPlot.fillText("Døde: " + dead,10,95)
-  talPlot.fillText("Immune: " + immune,10,115)
+  talPlot.fillText("Antal Døde: " + dead,10,95)
+  talPlot.fillText("Antal Immune: " + immune,10,115)
 
 }
 function checkCollision(){
@@ -181,24 +181,28 @@ window.onload = function () {
     },
     data: [{
       type: "line",
+      lineColor: "yellow",
       showInLegend: true,
       name: "Antal levende",
       dataPoints: dps
     },
     {
       type: "line",
+      lineColor: "red",
       showInLegend: true,
       name: "I(t)",
       dataPoints: dpsSyge
     },
     {
       type: "line",
+      lineColor: "blue",
       showInLegend: true,
       name: "S(t)",
       dataPoints: dpsRaske
     },
     {
       type: "line",
+      lineColor: "green",
       showInLegend: true,
       name: "R(t)",
       dataPoints: dpsImmune
