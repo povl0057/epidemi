@@ -188,21 +188,21 @@ window.onload = function () {
     },*/
     {
       type: "line",
-      lineColor: "ff0000",
+      lineColor: "red",
       showInLegend: true,
       name: "I(t)",
       dataPoints: dpsSyge
     },
     {
       type: "line",
-      lineColor: "0000ff",
+      lineColor: "blue",
       showInLegend: true,
       name: "S(t)",
       dataPoints: dpsRaske
     },
     {
       type: "line",
-      lineColor: "00b200",
+      lineColor: "green",
       showInLegend: true,
       name: "R(t)",
       dataPoints: dpsImmune
