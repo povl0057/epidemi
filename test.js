@@ -179,7 +179,7 @@ window.onload = function () {
           gridThickness: 0,
       title: "Antal",
     },
-    /*data: [{
+   data: [ /*{
       type: "line",
       lineColor: "yellow",
       showInLegend: true,
