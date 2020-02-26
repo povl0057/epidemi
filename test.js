@@ -138,10 +138,12 @@ function draw() {
   talPlot.clearRect(0, 0, width2, height2)
   drawRects()
   talPlot.fillText("Population: " + rects.length,10,15)
-  talPlot.fillText("Syge: " + syge,10,35)
-  talPlot.fillText("Raske: " + raske,10,55)
-  talPlot.fillText("Immune: " + immune,10,75)
+  talPlot.fillText("S(t): " + raske,10,35)
+  talPlot.fillText("I(t): " + syge,10,55)
+  talPlot.fillText("R(t): " + (dead + immune),10,75)
+
   talPlot.fillText("Døde: " + dead,10,95)
+  talPlot.fillText("Immune: " + immune,10,115)
 
 }
 function checkCollision(){
@@ -186,19 +188,19 @@ window.onload = function () {
     {
       type: "line",
       showInLegend: true,
-      name: "Antal Syge",
+      name: "I(t)",
       dataPoints: dpsSyge
     },
     {
       type: "line",
       showInLegend: true,
-      name: "Antal Raske",
+      name: "S(t)",
       dataPoints: dpsRaske
     },
     {
       type: "line",
       showInLegend: true,
-      name: "Antal Immune",
+      name: "R(t)",
       dataPoints: dpsImmune
     },
   ]
@@ -207,9 +209,9 @@ window.onload = function () {
   var xVal = 0;
   var yVal = numberOfRects
   
-  var yValSyge = 0;
-  var yValRaske = yVal;
-  var yValImmune = immune;
+  var yValI = 0;
+  var yValS= yVal;
+  var yValR = immune + dead;
   
   
   var updateInterval = 100;
@@ -227,21 +229,21 @@ var updateChart = function (count) {
 			y: yVal
 		});
 
-    yValSyge = syge
+    yValI= syge
 		dpsSyge.push({
 			x: xVal,
-			y: yValSyge
+			y: yValI
 		});
 
-    yValRaske = raske
+    yValS = raske
 		dpsRaske.push({
 			x: xVal,
-			y: yValRaske
+			y: yValS
 		});
-    yValImmune = immune
+    yValR = immune + dead
 		dpsImmune.push({
 			x: xVal,
-			y: yValImmune
+			y: yValR
 		});
 		xVal++;
 	}
