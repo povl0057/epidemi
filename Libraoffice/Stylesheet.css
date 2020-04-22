@@ -47,10 +47,10 @@ li b {
 }
 .videoWrapper iframe {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
+  top: 5%;
+  left: 10%;
+
+  height: 80%;
 }
 
 .box{
@@ -73,12 +73,12 @@ padding: 14px 16px;
 text-decoration: none;
 }
 .myButton {
-	background-color:#00a500;
+	background-color:#fcf2f2;
 	border-radius:28px;
 	border:1px solid #00a500;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:#31363a;
 	font-family:Arial;
 	font-size:19px;
 	padding:16px 31px;
@@ -87,6 +87,7 @@ text-decoration: none;
 }
 .myButton:hover {
 	background-color:#31363a;
+  color: #fcf2f2;
 }
 .myButton:active {
 	position:relative;
