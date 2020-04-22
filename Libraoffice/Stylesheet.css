@@ -1,0 +1,126 @@
+body{
+  color: black;
+  background-color: #fcf2f2;
+  font-family: 'Lato', sans-serif;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00A500;
+}
+li {
+  float: left;
+}
+li a {
+    font-weight: bold;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #31363a;
+}
+li b {
+
+    font-weight: bold;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #31363a;
+}
+.boxed {
+  background-color:
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.box{
+height:200px;
+background:#00A500;
+position: absolute;
+top: 25%;
+left: 40%;
+width: 20%;
+text-align: center;
+}
+.top{
+  background-color: #31363a;
+  text-align: center;
+  font-weight: bold;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.myButton {
+	background-color:#00a500;
+	border-radius:28px;
+	border:1px solid #00a500;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#31363a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton2 {
+	background-color:#fcf2f2;
+	border-radius:28px;
+	border:1px solid #00a500;
+	display:inline-block;
+	cursor:pointer;
+	color:#31363a;
+	font-family:Arial;
+	font-size:19px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton2:hover {
+	background-color:#31363a;
+  color: #fcf2f2;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+.kasse{
+  background-color: #00a500;
+
+  color: #fcf2f2;
+}
+.kasse h2{
+  background-color: #00a500;
+
+  color: #fcf2f2;
+}

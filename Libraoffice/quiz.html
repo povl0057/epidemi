@@ -1,0 +1,71 @@
+<html>
+
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+     <title>LibreOffice - gratis og bedre</title>
+     <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+
+   </head>
+
+   <body>
+     <div class="top">
+       <h1>LibreOffice</h1>
+     </div>
+     <ul>
+  <li><a href="libreoffice.html">HOME</a></li>
+  <li><a href="features.html">FEATURES</a></li>
+  <li><a href="download.html">SÅDAN DOWNLOADER DU</a></li>
+  <li><a href="memes.html">MEMES</a></li>
+  <li><a style="background-color: #31363a" href="quiz.html">QUIZ</a></li>
+  <li><a  href="omos.html">OM LIBREOFFICE</a></li>
+
+</ul>
+
+<h3>Deltag i vores quiz for at være med i lodtrækningen om gratis biografbiletter!</h3>
+
+<center>
+<h4 id="text">Første spørgsmål</h4>
+<br>
+<button  type="button" id="button1" class="myButton" >Click Me!</button>
+<button type="button" id="button2"  class="myButton" >Click Me!</button>
+</center>
+<script type="text/javascript">
+
+var spørgsmål = 0
+var button1 = document.querySelector('#button1');
+var button2 = document.querySelector('#button2');
+  var text = document.querySelector('#text');
+
+function stilSpørgsmål(){
+  if (spørgsmål == 0){
+    button1.innerText = '2011';
+    button2.innerText = '2012';
+
+    text.innerText = '1: I hvilket år udkom LibreOffice? (TIP: du kan finde svaret på LibreOffices hjemmeside)';
+    button1.onclick = function(){    alert("Du svarede rigtigt!"); spørgsmål = 1; stilSpørgsmål();};
+    button2.onclick = function(){alert("Du svarede desværre forkert. Men du kan prøve igen ved at reloade siden :)")};
+
+
+  }
+  if (spørgsmål == 1){
+    button1.innerText = 'Nej';
+    button2.innerText = 'Ja';
+
+    text.innerText = '2: Er LibraOffice open source?';
+    button1.onclick = function(){ alert("Du svarede desværre forkert. Men du kan prøve igen ved at reloade siden :)")   };
+    button2.onclick = function(){alert("Du svarede rigtigt! Du er nu med i lodtrækningen!"); prompt('Indtast venligtst din e-mail, så vi kan sende dig præmien, hvis du er den heldige vinder:');};
+
+
+  }
+}
+spørgsmål = 0
+stilSpørgsmål()
+
+</script>
+
+
+
+</body>
+
+
+   </html>
